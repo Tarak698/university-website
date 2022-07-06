@@ -5,8 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>university</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo2.png" style="height: 55px; width: 200px;" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">COURSE</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    <div class="text-box">
+        <h1>Arka <span>Jain</span> University</h1>
+        <p> ARKA JAIN University, Jharkhand intends to become an educational hub for millions of young minds across the country and internationally.<br>With a vision to empower talent through its innovative learning experience.</p>
+        <a href="" class="hero-btn">Visit Us To Know More</a>
+
+    </div>
+    </section>
+
+    <!------------ Course ------------->
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>ARKA JAIN University offers education and skills needed for leadership in a rapidly changing world.</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>B.Tech</h3>
+                <p>The Graduate degree programs are designed to deliver technical skills and knowledge as well as develop the academic and professional abilities. It also aims to develop analytical and management skills of the students.</p>
+            </div>
+            <div class="course-col">
+                <h3>BCA</h3>
+                <p>The programme makes students competent and technically skilled to showcase their technical expertise and work in the IT industry.</p>
+            </div>
+            <div class="course-col">
+                <h3>MCA</h3>
+                <p>The course is tailored for those looking to become strategic, innovative technology leaders by enriching their career experience and skills.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!------JavaScript for Toggle Menu------------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
     
 </body>
 </html>
