@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>university</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo2.png" style="height: 55px; width: 200px;" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">COURSE</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+    <!----------About Us Content---------->
+
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the jharkhand's leading university</h1>
+                <p>With a vision to empower talent through its innovative learning experience, ARKA JAIN University, Jharkhand intends to become an educational hub for millions of young minds across the country and internationally. Situated at the 1st industrial town of India, popularly known as Tatanagar or Jamshedpur, named after visionary industrialist Shri J.N. Tata, founder of Tata Group, the university has evolved magnificently over the last few years. ARKA JAIN University enlightens each and every aspiring student on higher education and career choices.</p>
+                <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="images/about.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    
+
+    <!---------Footer---------->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>With a vision to empower talent through its innovative learning experience, <br>ARKA JAIN University, Jharkhand intends to become an educational hub for millions of young minds across the country and internationally.</p>
+        <div class="icons">
+            <a target="_blank" href="https://www.facebook.com/arkajainuniversity/"><i class="fa fa-facebook"></i></a>
+            <a target="_blank" href="https://twitter.com/arka_jain?lang=en"><i class="fa fa-twitter"></i></a>
+            <a target="_blank" href="https://www.instagram.com/arkajainuniversity/?hl=en"><i class="fa fa-instagram"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/school/arka-jain-university/?originalSubdomain=in"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Taraknath Patra</p>
+
+    </section>
+
+    <!------JavaScript for Toggle Menu------------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    
+</body>
+</html>
