@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>university</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js" text="text/javascript"></script>
+    <!-- <script type="text/javascript">
+        (function() {
+            emailjs.init("yOKVBIT7Oz_C8rd8a");
+        })();
+    </script> -->
+    <!-- <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                console.log(event);
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_09u09cu', 'template_it03btm', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script> -->
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo2.png" style="height: 55px; width: 200px;" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+
+    <!----------Contact Us---------->
+
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3106.7482432393067!2d86.10147886835105!3d22.844309461102796!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f5e5f1b496777f%3A0x1d506033b3ed835d!2sARKA%20JAIN%20University!5e1!3m2!1sen!2sin!4v1657299180003!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>Opp. To Kerala Public School, Vill.- Mohanpur, Gamharia</h5>
+                        <p>Dist. – Seraikela Kharsawan, Jharkhand-832108</p>
+                    </span>  
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+91 8235078002, +91 7283000220</h5>
+                        <p>Monday to Saturday, 10AM to 6PM</p>
+                    </span>  
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>info@arkajainuniversity.ac.in</h5>
+                        <p>Email us your query</p>
+                    </span>  
+                </div>  
+            </div> 
+            <div class="contact-col">
+                <form action="" id="contact-form">
+                     <input type="hidden" name="contact_number">
+                    <input type="text" id="fullname" name="from_name" placeholder="Enter your name"  required>
+                    <input type="email" id="email_id" name="email_id" placeholder="Enter email address"  required>
+                    <input type="text" id="subject" name="subject" placeholder="Enter your subject"  required>
+                    <textarea id="message" name="message" rows="8" placeholder="Message"  required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                </form>
+            </div>  
+        </div>
+    </section>
+
+    
+    
+
+    <!---------Footer---------->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>With a vision to empower talent through its innovative learning experience, <br>ARKA JAIN University, Jharkhand intends to become an educational hub for millions of young minds across the country and internationally.</p>
+        <div class="icons">
+            <a target="_blank" href="https://www.facebook.com/arkajainuniversity/"><i class="fa fa-facebook"></i></a>
+            <a target="_blank" href="https://twitter.com/arka_jain?lang=en"><i class="fa fa-twitter"></i></a>
+            <a target="_blank" href="https://www.instagram.com/arkajainuniversity/?hl=en"><i class="fa fa-instagram"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/school/arka-jain-university/?originalSubdomain=in"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Taraknath Patra</p>
+
+    </section>
+
+    <!------JavaScript for Toggle Menu------------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    
+</body>
+</html>
